@@ -1,1 +1,12 @@
-/etc/systemd/system/wg.service
+[Unit]
+Description=Wireguard
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/bin/bash /root/scripts/wg.sh
+Type=simple
+User=root
+Group=root
+Restart=on-failure
