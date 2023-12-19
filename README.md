@@ -2,7 +2,6 @@
 
 ```
 apt update && apt upgrade -y && install -y git vim curl wget tmux gh htop wireguard
-
 cd
 rm .bashrc
 git init .
