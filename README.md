@@ -8,4 +8,8 @@ git init .
 git remote add -t \* -f origin https://github.com/marcaurelios/.dotfiles.git
 git checkout master
 rm README.md
+source .bashrc
+curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
+sudo apt-get install speedtest
+ipcheck
 ```
