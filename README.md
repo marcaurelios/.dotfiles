@@ -1,5 +1,5 @@
 # .dotfiles
 
-[code]
-https://github.com/marcaurelios/.dotfiles.git
-[/code]
+```
+git clone https://github.com/marcaurelios/.dotfiles.git
+```
