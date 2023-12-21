@@ -1,5 +1,5 @@
 [Unit]
-Description=Wireguard
+Description=wg
 
 [Install]
 WantedBy=multi-user.target
