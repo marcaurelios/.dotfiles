@@ -39,6 +39,6 @@ alias python='python3'
 alias pip='pip3'
 
 # MISC
-alias reload='source ~/.bashrc'
+alias reload='source ~/.bashrc && source ~/.zshrc'
 alias ipcheck='curl -s https://icanhazip.com && ~/scripts/dnsleaktest.sh'
 alias sudo=''
