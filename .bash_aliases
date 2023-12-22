@@ -21,9 +21,10 @@ alias dcd="docker compose down"
 alias dcr="dcd && dcu"
 
 # FS
+alias mkdir="mkdir -p"
 mkcd ()
 {
-    mkdir -p -- "$1" &&
+    mkdir -- "$1" &&
        cd -P -- "$1"
 }
 alias lsa="ls -lha"
