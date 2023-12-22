@@ -1,0 +1,12 @@
+[Unit]
+Description=chown
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/bin/bash /root/scripts/chown.sh
+Type=simple
+User=root
+Group=root
+Restart=on-failure
