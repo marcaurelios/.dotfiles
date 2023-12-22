@@ -7,7 +7,7 @@ if [ "$BASH" ]; then
 fi
 
 if [ "$ZSH" ]; then
-  if [ -f ~/.bashrc ]; then
+  if [ -f ~/.zshrc ]; then
     . ~/.zshrc
   fi
 fi
