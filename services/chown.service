@@ -1,5 +1,5 @@
 [Unit]
-Description=chown
+Description='set tmp folders to owner user mediarr'
 
 [Install]
 WantedBy=multi-user.target
