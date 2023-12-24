@@ -1,4 +1,4 @@
-# $HOME .dotfiles
+# $HOME/.dotfiles
 
 ```
 apt update && apt upgrade -y && install -y git vim curl wget tmux gh htop wireguard
