@@ -1,0 +1,21 @@
+-N 4
+
+# Remove Ads
+--sponsorblock-remove ALL
+
+# Save file
+-f "b[ext=mp4][height=720]"
+--download-archive ~/.ytarchive
+-P "temp:/tmp/yt/"
+-P "/mnt/media/youtube/"
+-o "%(playlist_uploader)s/%(playlist)s/%(playlist_index)s %(title)s.%(ext)s"
+#--exec "post_process:ffmpeg -i %(playlist_uploader)s/%(playlist)s/%(playlist_index)s %(title)s.%(ext)s -vcodec libx265 -crf 24 %(playlist_uploader)s/%(playlist)s/temp_%(playlist_index)s %(title)s.%(ext)s \; -execdir mv -f %(playlist_uploader)s/%(playlist)s/temp_%(playlist_index)s %(title)s.%(ext)s %(playlist_uploader)s/%(playlist)s/%(playlist_index)s %(title)s.%(ext)s \;"
+
+# METADATA
+--embed-thumbnail
+--embed-subs
+--embed-metadata
+--embed-chapters
+--embed-info-json
+--write-playlist-metafiles
+--no-write-comments

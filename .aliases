@@ -41,7 +41,7 @@ alias pip='pip3'
 # MISC
 alias ipcheck='curl -s https://icanhazip.com && ~/scripts/dnsleaktest.sh'
 alias sudo=''
-alias yt='yt-dlp --config-locations ~/.yt'
+alias yt='yt-dlp --config-location ~/.yt'
 
 if [ -n "$ZSH_VERSION" ]; then
    alias reload='source ~/.zshrc'
