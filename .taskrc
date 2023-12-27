@@ -1,0 +1,72 @@
+# [Created by task 2.6.2 8/22/2023 04:00:00]
+# Taskwarrior program configuration file.
+# For more documentation, see https://taskwarrior.org or try 'man task', 'man task-color',
+# 'man task-sync' or 'man taskrc'
+
+# You can also refence environment variables:
+#   variable=$HOME/task
+#   variable=$VALUE
+
+# Files
+data.location=/Users/develop/.task
+
+# To use the default location of the XDG directories,
+# move this configuration file from ~/.taskrc to ~/.config/task/taskrc and uncomment below
+
+#data.location=~/.local/share/task
+#hooks.location=~/.config/task/hooks
+
+# Color theme (uncomment one to use)
+#include light-16.theme
+#include light-256.theme
+#include dark-16.theme
+#include dark-256.theme
+#include dark-red-256.theme
+#include dark-green-256.theme
+#include dark-blue-256.theme
+#include dark-violets-256.theme
+#include dark-yellow-green.theme
+#include dark-gray-256.theme
+#include dark-gray-blue-256.theme
+include solarized-dark-256.theme
+#include solarized-light-256.theme
+#include no-color.theme
+
+news.version=2.6.0
+
+# Custom View
+report.next.columns=priority,urgency,description,tags,recur,scheduled.countdown,due.relative,until.remaining,project
+#report.next.columns=id,start.age,depends,priority,urgency,description,tags,recur,scheduled.countdown,due.relative,until.remaining,project
+report.next.labels=P,Urg,Description,Tag,Recur,S,Due,Until,Project
+#report.next.labels=ID,Active,Deps,P,Urg,Description,Tag,Recur,S,Due,Until,Project
+
+# Custom Tasks / Priorities
+default.project=Private
+
+uda.priority.values=B,E,N
+default.priority=E
+
+uda.priority.label=P
+uda.priority.type=string
+
+urgency.user.tag.next.coefficient=12
+urgency.uda.priority.B.coefficient=8
+urgency.uda.priority.E.coefficient=4
+urgency.uda.priority.N.coefficient=0
+
+urgency.user.project.Imolith.coefficient=5
+urgency.user.project.Private.coefficient=1
+urgency.user.project.Finance.coefficient=3
+
+dateformat=
+
+dateformat.report=
+
+dateformat.holiday=YMD
+
+dateformat.edit=
+
+dateformat.info=
+
+dateformat.annotation=
+
