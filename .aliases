@@ -27,7 +27,9 @@ mkcd ()
     mkdir -- "$1" &&
        cd -P -- "$1"
 }
+alias ls="ls --color=auto"
 alias lsa="ls -lha"
+alias ip='ip --color=auto'
 
 # VIM
 alias vi='vim'

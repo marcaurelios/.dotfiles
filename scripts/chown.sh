@@ -1,6 +1,7 @@
 #!/bin/bash
 
-mkdir -p /tmp/downloads /tmp/incomplete
-chown -R 1001:1001 /tmp/downloads /tmp/incomplete
+mkdir -p /var/tmp/qbit
+chown -R 1000:1000 /var/tmp/qbit
+chmod -R 775 /var/tmp/qbit
 
 exit 0
