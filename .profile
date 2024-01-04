@@ -3,6 +3,7 @@
 if [ -n "$ZSH_VERSION" ]; then
 	if [ -f ~/.zshrc ]; then
 		. ~/.zshrc
+		. ~/.m1zshrc
 	fi
 elif [ -n "$BASH_VERSION" ]; then
 	if [ -f ~/.bashrc ]; then
