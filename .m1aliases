@@ -59,7 +59,7 @@ alias pip='pip3'
 alias sv='~/scripts/stripvideo.sh'
 
 # MISC
-alias reload='source ~/.zshrc'
-alias ipcheck='curl -s https://icanhazip.com && ~/scripts/dnsleaktest.sh && speedtest'
+alias reload='source ~/.m1zshrc'
+alias ipcheck='curl -s https://icanhazip.com && ~/scripts/dnsleaktest.sh'
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown'
