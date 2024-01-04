@@ -15,39 +15,56 @@ alias dlogs='docker logs -tf --tail="50" '
 alias dstats='docker stats -a --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}\t{{.NetIO}}\t{{.BlockIO}}"'
 
 # DOCKER COMPOSE
+alias docker compose='docker-compose'
 alias tv='touch compose.yml && vim compose.yml'
 alias dcu="docker compose up -d"
 alias dcd="docker compose down"
 alias dcr="dcd && dcu"
 
+# DOCKER COMPOSE CHANGE DIR DC UP/DOWN/RELOAD
+dccu ()
+{
+    cd "$1" && dcu && cd ~/container
+}
+dccd ()
+{
+    cd "$1" && dcd && cd ~/container
+}
+dccr ()
+{
+    cd "$1" && dcr && cd ~/container 
+}
+
 # FS
-alias mkdir="mkdir -p"
 mkcd ()
 {
-    mkdir -- "$1" &&
+    mkdir -p -- "$1" &&
        cd -P -- "$1"
 }
+<<<<<<< HEAD:.aliases
 alias ls="ls --color=auto"
+=======
+
+alias ls="ls --color"
+>>>>>>> 1ccdefa60f003bb442610f17caad6ad73a7b2993:.brewaliases
 alias lsa="ls -lha"
 alias ip='ip --color=auto'
 
+# BREW
+alias brew delete='brew remove'
+
 # VIM
+#alias vim='nvim'
 alias vi='vim'
-alias nvim='vim'
 alias vimi='vim'
 
 # PYTHON
 alias python='python3'
 alias pip='pip3'
+alias sv='~/scripts/stripvideo.sh'
 
 # MISC
-alias ipcheck='curl -s https://icanhazip.com && ~/scripts/dnsleaktest.sh'
-alias sudo=''
-alias yt='yt-dlp --config-location ~/.yt'
-
-if [ -n "$ZSH_VERSION" ]; then
-   alias reload='source ~/.zshrc'
-elif [ -n "$BASH_VERSION" ]; then
-   alias reload='source ~/.bashrc'
-fi
-
+alias reload='source ~/.zshrc'
+alias ipcheck='curl -s https://icanhazip.com && ~/scripts/dnsleaktest.sh && speedtest'
+alias reboot='sudo reboot'
+alias shutdown='sudo shutdown'
