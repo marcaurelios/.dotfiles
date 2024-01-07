@@ -1,5 +1,5 @@
 [Unit]
-Description='set tmp folders to owner user mediarr'
+Description='set tmp folders owner to user'
 
 [Install]
 WantedBy=multi-user.target

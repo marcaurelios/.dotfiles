@@ -1,11 +1,5 @@
-# DOCKER COMMON - All docker commands start with "d"
-alias dstop='docker stop $(docker ps -a -q)'
 alias dstopall='docker stop $(sudo docker ps -aq)'
 alias drm='docker rm $(docker ps -a -q)'
-alias dprunevol='docker volume prune'
-alias dprunesys='docker system prune -a'
-alias ddelimages='docker rmi $(docker images -q)'
-alias derase='dstopcont ; drmcont ; ddelimages ; dprunevol ; dprunesys'
 alias dprune='ddelimages ; dprunevol ; dprunesys'
 alias dexec='docker exec -ti'
 alias dps='docker ps -a'
@@ -57,3 +51,5 @@ alias sv='~/scripts/cutvideo.sh'
 # MISC
 alias reload='source ~/.bashrc'
 alias ipcheck='curl -s https://icanhazip.com && ~/scripts/dnsleaktest.sh'
+alias sudo=''
+alias cata='cat'
