@@ -57,5 +57,3 @@ alias sv='~/scripts/cutvideo.sh'
 # MISC
 alias reload='source ~/.bashrc'
 alias ipcheck='curl -s https://icanhazip.com && ~/scripts/dnsleaktest.sh'
-alias reboot='sudo reboot'
-alias shutdown='sudo shutdown'
