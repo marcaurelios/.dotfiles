@@ -50,6 +50,6 @@ alias sv='~/scripts/cutvideo.sh'
 
 # MISC
 alias reload='source ~/.bashrc'
-alias ipcheck='curl -s https://icanhazip.com && ~/scripts/dnsleaktest.sh'
+alias ipcheck='~/scripts/ipcheck.sh && ~/scripts/dnsleaktest.sh'
 alias sudo=''
 alias cata='cat'
