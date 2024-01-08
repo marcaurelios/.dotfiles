@@ -1,7 +1,8 @@
-alias dstopall='docker stop $(sudo docker ps -aq)'
+alias d='docker'
+alias dsa='docker stop $(sudo docker ps -aq)'
 alias drm='docker rm $(docker ps -a -q)'
-alias dprune='ddelimages ; dprunevol ; dprunesys'
-alias dexec='docker exec -ti'
+alias dpr='docker prune'
+alias dex='docker exec -ti'
 alias dps='docker ps -a'
 alias dpss='docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Image}}"'
 alias ddf='docker system df'
@@ -9,7 +10,6 @@ alias dlogs='docker logs -tf --tail="50" '
 alias dstats='docker stats -a --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}\t{{.NetIO}}\t{{.BlockIO}}"'
 
 # DOCKER COMPOSE
-alias docker compose='docker-compose'
 alias tv='touch compose.yml && vim compose.yml'
 alias dcu="docker compose up -d"
 alias dcd="docker compose down"
