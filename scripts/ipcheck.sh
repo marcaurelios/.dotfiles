@@ -1,1 +1,2 @@
-alias ipcheck='curl -s https://icanhazip.com'
+#!/usr/bin/env sh
+curl -s https://icanhazip.com
