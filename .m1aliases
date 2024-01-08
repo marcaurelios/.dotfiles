@@ -41,12 +41,6 @@ mkcd ()
     mkdir -p -- "$1" &&
        cd -P -- "$1"
 }
-<<<<<<< HEAD:.aliases
-alias ls="ls --color=auto"
-=======
-
-alias ls="ls --color"
->>>>>>> 1ccdefa60f003bb442610f17caad6ad73a7b2993:.brewaliases
 alias lsa="ls -lha"
 alias ip='ip --color=auto'
 
