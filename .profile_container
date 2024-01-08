@@ -8,6 +8,7 @@ alias ls='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -l'
 alias l='ls $LS_OPTIONS -lA'
 
-alias ipc='~/scripts/ipcheck.sh && ~/scripts/dnsleaktest.sh'
+alias ipcheck='~/scripts/ipcheck.sh && ~/scripts/dnsleaktest.sh'
+alias ipc='ipcheck'
 alias sudo=''
 alias cata='cat'
