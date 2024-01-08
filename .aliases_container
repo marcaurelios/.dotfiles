@@ -1,4 +1,0 @@
-alias reload='source ~/.bashrc'
-alias ipcheck='~/scripts/ipcheck.sh && ~/scripts/dnsleaktest.sh'
-alias sudo=''
-alias cata='cat'
